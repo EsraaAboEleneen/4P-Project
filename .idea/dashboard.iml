@@ -110,6 +110,7 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/infyomlabs/laravel-generator" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/infyomlabs/adminlte-templates" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/laracasts/flash" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/mcamara/laravel-localization" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

@@ -1,5 +1,5 @@
 <li class="{{ Request::is('blogs*') ? 'active' : '' }}">
-    <a href="{{ route('blogs.index') }}"><i class="fa fa-edit"></i><span>Blogs</span></a>
+    <a href="{{ route('blogs.index') }}"><i class="fa fa-edit"></i><span>{{__('Blogs')}}</span></a>
 </li>
 <li class="{{ Request::is('benefits*') ? 'active' : '' }}">
     <a href="{{ route('benefits.index') }}"><i class="fa fa-check"></i><span>Benefits</span></a>

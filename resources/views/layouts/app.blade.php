@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ LaravelLocalization::getCurrentLocale() }}"
+      dir="{{ LaravelLocalization::getCurrentLocaleDirection() }}">
 <head>
     <meta charset="UTF-8">
     <title>{{ config('app.name') }}</title>
@@ -34,9 +35,8 @@
 
             <!-- Logo -->
             <a href="#" class="logo">
-                <b>InfyOm</b>
+                <b>{{__('Laravel')}}</b>
             </a>
-
             <!-- Header Navbar -->
             <nav class="navbar navbar-static-top" role="navigation">
                 <!-- Sidebar toggle button-->
@@ -60,8 +60,6 @@
                             <ul class="dropdown-menu">
                                 <!-- The user image in the menu -->
                                 <li class="user-header">
-{{--                                    <img src="http://infyom.com/images/logo/blue_logo_150x150.jpg"--}}
-{{--                                         class="img-circle" alt="User Image"/>--}}
                                     <p>
                                         {{ Auth::user()->name }}
                                         <small>Member since {{ Auth::user()->created_at->format('M. Y') }}</small>

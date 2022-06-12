@@ -2,7 +2,7 @@
 
 
 @section('content')
-    <form method="POST" style="padding: 10px" enctype="multipart/form-data" action="{{route('about.store')}}">
+    <form method="POST" style="padding: 10px" enctype="multipart/form-data" action="{{route('about.store',app()->getLocale())}}">
         @csrf
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Title</label>
